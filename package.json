@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "tailwindcss": "^2.0.2"
+  },
+  "scripts": {
+    "build-css": "npx tailwindcss-cli@latest build ./source/style.css -o ./public/output.css"
+  }
+}

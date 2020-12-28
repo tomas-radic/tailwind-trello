@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card {
+        @apply my-2 p-3 leading-snug;
+        @apply bg-white;
+        @apply border-b border-gray-400;
+        @apply cursor-pointer rounded;
+    }
+
+    .card:hover {
+        @apply bg-gray-100;
+    }
+
+
+    .list {
+        @apply max-h-full overflow-y-scroll;
+        @apply flex-shrink-0 w-full mb-10 p-3 pb-2;
+        @apply bg-gray-200 text-gray-800;
+        @apply rounded-lg shadow-xl;
+    }
+
+    @screen sm {
+        .list {
+            @apply w-80 mx-4 mb-0;
+        }
+    }
+}
