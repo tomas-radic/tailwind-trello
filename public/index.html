@@ -19,21 +19,55 @@
   <div class="sm:flex items-start w-screen px-4 py-10 overflow-x-scroll">
     <section class="list">
       <header>
-        <h3 class="p-1 font-bold leading-none text-gray-900">TODO</h3>
+        <h3 contenteditable="" class="p-1 font-bold leading-none text-gray-900 outline-none focus:shadow-outline">TODO</h3>
       </header>
       <ul>
-        <li class="card">Task 1</li>
-        <li class="card">Task 2</li>
-        <li class="card">Task 3</li>
-        <li class="card">Task 1</li>
-        <li class="card">Task 2</li>
-        <li class="card">Task 3</li>
-        <li class="card">Task 1</li>
-        <li class="card">Task 2</li>
-        <li class="card">Task 3</li>
-        <li class="card">Task 1</li>
-        <li class="card">Task 2</li>
-        <li class="card">Task 3</li>
+        <li class="card">
+          <div class="p-3">
+            <p>
+              Task 1
+            </p>
+          </div>
+        </li>
+        <li class="card">
+          <figure class="flex items-center max-h-52 sm:max-h-36 border-b border-gray-200 overflow-hidden rounded-t">
+            <img src="https://tennishead.net/wp-content/uploads/2020/02/Roger-Federer-celebrates.jpg" alt="">
+          </figure>
+          <div class="p-3">
+            <aside class="flex mb-1.5">
+              <span class="bg-yellow-300 w-8 h-2 mr-2 rounded-full"></span>
+              <span class="bg-blue-400 w-8 h-2 mr-2 rounded-full"></span>
+            </aside>
+            <p>
+              Task 2
+            </p>
+            <footer class="flex mt-2 text-xs text-white">
+              <a href="#" class="px-1 py-0.5 mr-1.5 bg-gray-500 rounded opacity-50 hover:opacity-100">Roger Federer</a>
+              <a href="#" class="px-1 py-0.5 mr-1.5 bg-gray-500 rounded opacity-50 hover:opacity-100">Wimbledon</a>
+            </footer>
+          </div>
+        </li>
+        <li class="card">
+          <div class="p-3">
+            <p>
+              Task 3
+            </p>
+          </div>
+        </li>
+        <li class="card">
+          <div class="p-3">
+            <p>
+              Task 4
+            </p>
+          </div>
+        </li>
+        <li class="card">
+          <div class="p-3">
+            <p>
+              Task 5
+            </p>
+          </div>
+        </li>
       </ul>
       <footer>
         <a href="#" class="block p-1 text-gray-500 hover:text-gray-700">
@@ -55,44 +89,32 @@
         <a href="#" class="hidden block p-1 text-gray-500 hover:text-gray-700">
           Add a card...
         </a>
+
+        <form action="">
+          <textarea class="w-full p-3 outline-none border-t border-l border-gray-300 rounded shadow-inner" rows="3"></textarea>
+          <div class="flex items-center mt-1.5">
+            <button class="btn btn-green">Add card</button>
+
+            <a href="#" class="ml-1 p-1 text-gray-500 hover:text-gray-700">
+              <svg class="p-1 w-6 h-6 fill-current">
+                <path d="M2.64,1.27L7.5,6.13l4.84-4.84C12.5114,1.1076,12.7497,1.0029,13,1c0.5523,0,1,0.4477,1,1&#xA;&#x9;c0.0047,0.2478-0.093,0.4866-0.27,0.66L8.84,7.5l4.89,4.89c0.1648,0.1612,0.2615,0.3796,0.27,0.61c0,0.5523-0.4477,1-1,1&#xA;&#x9;c-0.2577,0.0107-0.508-0.0873-0.69-0.27L7.5,8.87l-4.85,4.85C2.4793,13.8963,2.2453,13.9971,2,14c-0.5523,0-1-0.4477-1-1&#xA;&#x9;c-0.0047-0.2478,0.093-0.4866,0.27-0.66L6.16,7.5L1.27,2.61C1.1052,2.4488,1.0085,2.2304,1,2c0-0.5523,0.4477-1,1-1&#xA;&#x9;C2.2404,1.0029,2.4701,1.0998,2.64,1.27z"/>
+              </svg>
+            </a>
+
+          </div>
+
+        </form>
       </footer>
     </section>
 
 
-
-    <section class="list">
-      <header>
-        <h3 class="p-1 font-bold leading-none text-gray-900">TODO</h3>
-      </header>
-      <ul>
-        <li class="my-3 p-2 bg-white hover:bg-gray-100 border-bottom border-gray-400 cursor-pointer rounded">Task 1</li>
-        <li class="my-3 p-2 bg-white hover:bg-gray-100 border-bottom border-gray-400 cursor-pointer rounded">Task 2</li>
-        <li class="my-3 p-2 bg-white hover:bg-gray-100 border-bottom border-gray-400 cursor-pointer rounded">Task 3</li>
-      </ul>
-      <footer>
-        <a href="#" class="block p-1 text-gray-500 hover:text-gray-700">
-          Add a card...
-        </a>
-      </footer>
-    </section>
+    <form class="flex-shrink-0 text-gray-800 sm:w-80 sm:mx-4 sm:mb-0 sm:pr-8" action="">
+      <input class="w-full p-2.5 bg-white bg-opacity-40 focus:bg-opacity-100 placeholder-white focus:placeholder-gray-600 font-bold rounded-lg outline-none focus:shadow-xl" type="text" placeholder="Add another list">
+    </form>
 
 
 
-    <section class="list">
-      <header>
-        <h3 class="p-1 font-bold leading-none text-gray-900">TODO</h3>
-      </header>
-      <ul>
-        <li class="my-3 p-2 bg-white hover:bg-gray-100 border-bottom border-gray-400 cursor-pointer rounded">Task 1</li>
-        <li class="my-3 p-2 bg-white hover:bg-gray-100 border-bottom border-gray-400 cursor-pointer rounded">Task 2</li>
-        <li class="my-3 p-2 bg-white hover:bg-gray-100 border-bottom border-gray-400 cursor-pointer rounded">Task 3</li>
-      </ul>
-      <footer>
-        <a href="#" class="block p-1 text-gray-500 hover:text-gray-700">
-          Add a card...
-        </a>
-      </footer>
-    </section>
+
 
 
   </div>
@@ -102,9 +124,9 @@
 
 
 
-<div class="min-h-screen bg-gray-100 bg-gradient-to-r from-red-400 to-pink-400 py-6 flex flex-col justify-center sm:py-12">
+<div class="min-h-screen lg:bg-teal-500 lg:bg-none bg-gradient-to-r from-red-400 to-pink-400 py-6 flex flex-col justify-center sm:py-12">
   <div class="relative py-3 sm:max-w-xl sm:mx-auto">
-    <div class="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+    <div class="absolute inset-0 bg-gradient-to-r lg:from-yellow-300 lg:to-pink-400 from-teal-400 to-blue-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
     <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
       <div class="max-w-md mx-auto">
         <div>
@@ -116,7 +138,7 @@
             <ul class="list-disc space-y-2">
               <li class="flex items-start">
                 <span class="h-6 flex items-center sm:h-7">
-                  <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
+                  <svg class="flex-shrink-0 h-5 w-5 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
                 </span>
@@ -127,7 +149,7 @@
               </li>
               <li class="flex items-start">
                 <span class="h-6 flex items-center sm:h-7">
-                  <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
+                  <svg class="flex-shrink-0 h-5 w-5 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
                 </span>
@@ -138,7 +160,7 @@
               </li>
               <li class="flex items-start">
                 <span class="h-6 flex items-center sm:h-7">
-                  <svg class="flex-shrink-0 h-5 w-5 text-cyan-500" viewBox="0 0 20 20" fill="currentColor">
+                  <svg class="flex-shrink-0 h-5 w-5 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                   </svg>
                 </span>
@@ -150,7 +172,7 @@
           <div class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
             <p>Want to dig deeper into Tailwind?</p>
             <p>
-              <a href="https://tailwindcss.com/docs" class="text-cyan-600 hover:text-cyan-700"> Read the docs &rarr; </a>
+              <a href="https://tailwindcss.com/docs" class="text-teal-600 hover:text-teal-700"> Read the docs &rarr; </a>
             </p>
           </div>
         </div>
