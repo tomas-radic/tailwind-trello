@@ -554,35 +554,40 @@ video {
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
 }
 
-/*.list {*/
-
-/*    @apply max-h-full overflow-y-scroll;*/
-
-/*    @apply flex-shrink-0 w-full mb-10 p-3 pb-2;*/
-
-/*    @apply bg-gray-200 text-gray-800;*/
-
-/*    @apply rounded-lg shadow-xl;*/
-
-/*}*/
-
 .list {
-  /* size */
   flex-shrink: 0;
   margin-bottom: 2.5rem;
   padding: 0.75rem;
   padding-bottom: 0.5rem;
   width: 100%;
-  /* colors */
   --tw-bg-opacity: 1;
   background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgba(31, 41, 55, var(--tw-text-opacity));
-  /* special stuff */
   border-radius: 0.5rem;
   --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
+/*.list {*/
+
+/*    !* size *!*/
+
+/*    @apply flex-shrink-0;*/
+
+/*    @apply w-full mb-10 p-3 pb-2;*/
+
+/*    !* colors *!*/
+
+/*    @apply bg-gray-200;*/
+
+/*    @apply text-gray-800;*/
+
+/*    !* special stuff *!*/
+
+/*    @apply rounded-lg shadow-xl;*/
+
+/*}*/
 
 @media (min-width: 420px) {
   .list {
